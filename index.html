@@ -1,0 +1,1093 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shorouq Smart School System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+      <button
+        class="side-nav-btn active"
+        onclick="scrollToSection('hero')"
+        title="الرئيسية"
+      >
+        <i data-lucide="home" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="side-nav-btn"
+        onclick="scrollToSection('problem')"
+        title="المشكلة"
+      >
+        <i data-lucide="alert-circle" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="side-nav-btn"
+        onclick="scrollToSection('survey')"
+        title="الاستبيان"
+      >
+        <i data-lucide="bar-chart-3" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="side-nav-btn"
+        onclick="scrollToSection('feasibility')"
+        title="الجدوى"
+      >
+        <i data-lucide="check-circle" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="side-nav-btn"
+        onclick="scrollToSection('analysis')"
+        title="التحليل"
+      >
+        <i data-lucide="database" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="side-nav-btn"
+        onclick="scrollToSection('uiux')"
+        title="UI/UX"
+      >
+        <i data-lucide="layout" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="side-nav-btn"
+        onclick="scrollToSection('frontend')"
+        title="Frontend"
+      >
+        <i data-lucide="monitor" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="side-nav-btn"
+        onclick="scrollToSection('database')"
+        title="Database"
+      >
+        <i data-lucide="hard-drive" class="w-4 h-4"></i>
+      </button>
+      <button
+        class="side-nav-btn"
+        onclick="scrollToSection('backend')"
+        title="Backend"
+      >
+        <i data-lucide="server" class="w-4 h-4"></i>
+      </button>
+      <button class="side-nav-btn" onclick="scrollToSection('ai')" title="AI">
+        <i data-lucide="brain" class="w-4 h-4"></i>
+      </button>
+    </nav>
+
+    <!-- Top Navigation -->
+    <header class="nav-glass">
+      <div class="nav-inner">
+        <div class="nav-logo">
+          <div class="logo-icon">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
+          </div>
+          <span class="logo-text">Shorouq Smart School</span>
+        </div>
+        <div class="nav-links">
+          <a href="#problem">المشكلة</a>
+          <a href="#feasibility">الجدوى</a>
+          <a href="#analysis">التحليل</a>
+          <a href="#uiux">UI/UX</a>
+          <a href="#ai">AI</a>
+        </div>
+        <div class="nav-status">
+          <span class="status-text">Graduation Project 2025</span>
+          <div class="status-dot"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section id="hero" class="hero-section">
+      <div class="particles-container" id="particles"></div>
+      <div class="bg-grid"></div>
+      <div class="hero-content">
+        <div class="hero-badge fade-in-up">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-indigo-400"></i>
+          <span>Smart School Management System Using AI</span>
+        </div>
+        <h1 class="hero-title fade-in-up delay-1">
+          <span class="text-gradient">Shorouq</span>
+          <br />
+          <span class="title-white">Smart School</span>
+        </h1>
+        <p class="hero-subtitle fade-in-up delay-2">
+          نظام ذكي متكامل لإدارة المدارس يعتمد على الذكاء الاصطناعي لتحسين جودة
+          التعليم وتنظيم العملية التعليمية
+        </p>
+        <div class="supervisors fade-in-up delay-3">
+          <div class="supervisor-item">
+            <div class="supervisor-avatar">
+              <i data-lucide="user-check" class="w-4 h-4 text-indigo-400"></i>
+            </div>
+            <div class="supervisor-info">
+              <p class="supervisor-label">Supervised by</p>
+              <p class="supervisor-name">DR: Ahmed Negm</p>
+            </div>
+          </div>
+          <div class="supervisor-divider"></div>
+          <div class="supervisor-item">
+            <div class="supervisor-avatar">
+              <i data-lucide="user-check" class="w-4 h-4 text-indigo-400"></i>
+            </div>
+            <div class="supervisor-info">
+              <p class="supervisor-label">Supervised by</p>
+              <p class="supervisor-name">Eng: Ali Saad</p>
+            </div>
+          </div>
+        </div>
+        <div class="team-section fade-in-up delay-4">
+          <p class="team-label">Project Team</p>
+          <div class="team-grid">
+            <div class="team-avatar">Mohamed Adel Abdelbaset</div>
+            <div class="team-avatar">Rana Malek Ali</div>
+            <div class="team-avatar">Ranem Mohamed</div>
+            <div class="team-avatar">Mohamed Gamal</div>
+            <div class="team-avatar">Ahmed Abdelhamed</div>
+            <div class="team-avatar">Zeyad Wael</div>
+            <div class="team-avatar">Habiba Khaled</div>
+            <div class="team-avatar">Esraa Ahdy</div>
+            <div class="team-avatar">Malak Essam</div>
+            <div class="team-avatar">Malak Adel</div>
+            <div class="team-avatar">Merna Bahget</div>
+          </div>
+        </div>
+        <div class="scroll-indicator fade-in-up delay-5">
+          <span>Scroll</span>
+          <div class="scroll-mouse">
+            <div class="scroll-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROBLEM STATEMENT ============ -->
+    <section id="problem" class="section section-gradient-bg">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge section-badge-red">
+            <i data-lucide="alert-triangle" class="w-4 h-4 text-red-400"></i>
+            <span>Problem Statement</span>
+          </div>
+          <span class="section-school">Shorouq Modern School</span>
+          <h2 class="section-title">المشكلة</h2>
+        </div>
+        <div class="cards-grid-3">
+          <div class="glass-card animate-on-scroll delay-1">
+            <div class="card-icon card-icon-orange">
+              <i data-lucide="file-text" class="w-5 h-5 text-orange-400"></i>
+            </div>
+            <h3 class="card-title">الوضع الحالي</h3>
+            <p class="card-text">
+              رغم التطور التكنولوجي، ما زالت العديد من المدارس تعتمد على
+              الأساليب التقليدية في إدارة العملية التعليمية، مثل تسجيل الحضور
+              يدويًا وضعف التواصل بين الطلاب والمعلمين وأولياء الأمور.
+            </p>
+          </div>
+          <div class="glass-card animate-on-scroll delay-2">
+            <div class="card-icon card-icon-red">
+              <i data-lucide="x-circle" class="w-5 h-5 text-red-400"></i>
+            </div>
+            <h3 class="card-title">الأسباب</h3>
+            <p class="card-text">
+              يرجع ذلك إلى الاعتماد على الأنظمة الورقية وعدم وجود منصة موحدة،
+              مما يؤدي إلى انخفاض كفاءة الإدارة، وضعف متابعة الطلاب، وإهدار
+              الوقت والجهد، بالإضافة إلى عدم دقة بعض البيانات.
+            </p>
+          </div>
+          <div class="glass-card animate-on-scroll delay-3">
+            <div class="card-icon card-icon-indigo">
+              <i data-lucide="lightbulb" class="w-5 h-5 text-indigo-400"></i>
+            </div>
+            <h3 class="card-title">الحاجة</h3>
+            <p class="card-text">
+              لذلك، ظهرت الحاجة إلى نظام إلكتروني متكامل يساعد في تحسين جودة
+              التعليم وتنظيم العملية التعليمية بشكل أكثر كفاءة.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SURVEY RESULTS ============ -->
+    <section id="survey" class="section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge section-badge-blue">
+            <i data-lucide="bar-chart-3" class="w-4 h-4 text-blue-400"></i>
+            <span>Survey Results</span>
+          </div>
+          <span class="section-school">Shorouq Modern School</span>
+          <h2 class="section-title">نتائج الاستبيان</h2>
+          <p class="section-desc">
+            لفهم المشكلة بشكل أفضل، قمنا بعمل استبيان شمل مجموعة من الطلاب
+            والمعلمين لمعرفة آرائهم حول النظام الحالي.
+          </p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card animate-on-scroll delay-1">
+            <div class="stat-top">
+              <div>
+                <p class="stat-number stat-number-blue">%70</p>
+                <p class="stat-label">صعوبة تسجيل الحضور</p>
+              </div>
+              <div class="stat-icon stat-icon-blue">
+                <i data-lucide="user-x" class="w-5 h-5 text-blue-400"></i>
+              </div>
+            </div>
+            <p class="stat-desc">
+              من المستخدمين يواجهون صعوبة في تسجيل الحضور بالطريقة التقليدية.
+            </p>
+            <div class="stat-bar-bg">
+              <div
+                class="stat-bar stat-bar-blue"
+                style="--bar-width: 70%"
+              ></div>
+            </div>
+          </div>
+          <div class="stat-card animate-on-scroll delay-2">
+            <div class="stat-top">
+              <div>
+                <p class="stat-number stat-number-indigo">%92</p>
+                <p class="stat-label">تفضيل النظام الإلكتروني</p>
+              </div>
+              <div class="stat-icon stat-icon-indigo">
+                <i
+                  data-lucide="monitor-check"
+                  class="w-5 h-5 text-indigo-400"
+                ></i>
+              </div>
+            </div>
+            <p class="stat-desc">
+              يفضلون استخدام نظام إلكتروني بدلاً من الطرق اليدوية.
+            </p>
+            <div class="stat-bar-bg">
+              <div
+                class="stat-bar stat-bar-indigo"
+                style="--bar-width: 92%"
+              ></div>
+            </div>
+          </div>
+          <div class="stat-card animate-on-scroll delay-3">
+            <div class="stat-top">
+              <div>
+                <p class="stat-number stat-number-green">%40</p>
+                <p class="stat-label">ضعف التواصل</p>
+              </div>
+              <div class="stat-icon stat-icon-green">
+                <i
+                  data-lucide="message-circle-off"
+                  class="w-5 h-5 text-emerald-400"
+                ></i>
+              </div>
+            </div>
+            <p class="stat-desc">
+              أشاروا إلى وجود ضعف في التواصل بين الطلاب والإدارة.
+            </p>
+            <div class="stat-bar-bg">
+              <div
+                class="stat-bar stat-bar-green"
+                style="--bar-width: 40%"
+              ></div>
+            </div>
+          </div>
+          <div class="stat-card stat-card-glow animate-on-scroll delay-4">
+            <div class="stat-top">
+              <div>
+                <p class="stat-number stat-number-purple">%95</p>
+                <p class="stat-label">تحسين الكفاءة</p>
+              </div>
+              <div class="stat-icon stat-icon-purple">
+                <i
+                  data-lucide="trending-up"
+                  class="w-5 h-5 text-purple-400"
+                ></i>
+              </div>
+            </div>
+            <p class="stat-desc">
+              يرون أن النظام الإلكتروني سيساهم في تحسين الكفاءة.
+            </p>
+            <div class="stat-bar-bg">
+              <div
+                class="stat-bar stat-bar-purple"
+                style="--bar-width: 95%"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEASIBILITY STUDY ============ -->
+    <section id="feasibility" class="section section-gradient-bg">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge section-badge-green">
+            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+            <span>Feasibility Study</span>
+          </div>
+          <h2 class="section-title">دراسة الجدوى</h2>
+        </div>
+        <div class="glass-card animate-on-scroll delay-1 mb-8">
+          <div class="feasibility-header">
+            <div class="feasibility-icon feasibility-icon-indigo">
+              <i data-lucide="cpu" class="w-5 h-5 text-indigo-400"></i>
+            </div>
+            <div>
+              <h3 class="feasibility-title">الجدوى التقنية</h3>
+              <p class="feasibility-subtitle">Technical Feasibility</p>
+            </div>
+          </div>
+          <p class="feasibility-desc">
+            المشروع قابل للتنفيذ باستخدام مجموعة من التقنيات الحديثة والمتوافقة
+            مع متطلبات النظام
+          </p>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <div class="tech-item-icon tech-item-cyan">
+                <i data-lucide="layout" class="w-3.5 h-3.5 text-cyan-400"></i>
+              </div>
+              <span class="tech-item-label">Frontend</span>
+              <p class="tech-item-value">React.js</p>
+            </div>
+            <div class="tech-item">
+              <div class="tech-item-icon tech-item-red">
+                <i data-lucide="server" class="w-3.5 h-3.5 text-red-400"></i>
+              </div>
+              <span class="tech-item-label">Backend</span>
+              <p class="tech-item-value">PHP (Laravel)</p>
+            </div>
+            <div class="tech-item">
+              <div class="tech-item-icon tech-item-amber">
+                <i
+                  data-lucide="database"
+                  class="w-3.5 h-3.5 text-amber-400"
+                ></i>
+              </div>
+              <span class="tech-item-label">Database</span>
+              <p class="tech-item-value">Firebase</p>
+            </div>
+            <div class="tech-item">
+              <div class="tech-item-icon tech-item-purple">
+                <i data-lucide="brain" class="w-3.5 h-3.5 text-purple-400"></i>
+              </div>
+              <span class="tech-item-label">AI</span>
+              <p class="tech-item-value">Python</p>
+            </div>
+          </div>
+          <div class="ai-details-box">
+            <p class="ai-details-label">تعتمد تقنيات الذكاء الاصطناعي على</p>
+            <div class="ai-tags">
+              <div class="tech-tag">
+                <i
+                  data-lucide="scan-face"
+                  class="w-3.5 h-3.5 text-indigo-400"
+                ></i>
+                <span>ArcFace لتحويل الوجه إلى بيانات والتعرف على الأشخاص</span>
+              </div>
+              <div class="tech-tag">
+                <i data-lucide="eye" class="w-3.5 h-3.5 text-indigo-400"></i>
+                <span>Face Detection لاكتشاف الوجوه</span>
+              </div>
+              <div class="tech-tag">
+                <i
+                  data-lucide="crosshair"
+                  class="w-3.5 h-3.5 text-indigo-400"
+                ></i>
+                <span>Face Landmark لتحديد ملامح الوجه (العين والأنف)</span>
+              </div>
+            </div>
+            <p class="ai-libs">مكتبات: InsightFace, OpenCV, NumPy</p>
+          </div>
+        </div>
+        <div class="glass-card animate-on-scroll delay-2">
+          <div class="feasibility-header">
+            <div class="feasibility-icon feasibility-icon-green">
+              <i data-lucide="coins" class="w-5 h-5 text-emerald-400"></i>
+            </div>
+            <div>
+              <h3 class="feasibility-title">الجدوى المالية</h3>
+              <p class="feasibility-subtitle">Financial Feasibility</p>
+            </div>
+          </div>
+          <p class="feasibility-desc">
+            يهدف المشروع إلى تقييم التكاليف ومدى جدواه الاقتصادية
+          </p>
+          <div class="finance-grid">
+            <div class="finance-item">
+              <div class="finance-item-header">
+                <i data-lucide="camera" class="w-4 h-4 text-amber-400"></i>
+                <span>Hardware</span>
+              </div>
+              <p class="finance-item-desc">كاميرا التعرف على الوجه</p>
+              <p class="finance-item-price finance-price-amber">
+                2,300 <span>جنيه</span>
+              </p>
+            </div>
+            <div class="finance-item">
+              <div class="finance-item-header">
+                <i data-lucide="code" class="w-4 h-4 text-emerald-400"></i>
+                <span>Software</span>
+              </div>
+              <p class="finance-item-desc">أدوات مفتوحة المصدر</p>
+              <p class="finance-item-price finance-price-green">مجاني</p>
+            </div>
+            <div class="finance-item">
+              <div class="finance-item-header">
+                <i data-lucide="cloud" class="w-4 h-4 text-blue-400"></i>
+                <span>Operational</span>
+              </div>
+              <p class="finance-item-desc">استضافة + دومين + إنترنت</p>
+              <p class="finance-item-price finance-price-blue">تكلفة بسيطة</p>
+            </div>
+            <div class="finance-item">
+              <div class="finance-item-header">
+                <i data-lucide="clock" class="w-4 h-4 text-purple-400"></i>
+                <span>Indirect</span>
+              </div>
+              <p class="finance-item-desc">وقت ومجهود الفريق</p>
+              <p class="finance-item-price finance-price-purple">—</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DATA ANALYSIS ============ -->
+    <section id="analysis" class="section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge section-badge-purple">
+            <i data-lucide="database" class="w-4 h-4 text-purple-400"></i>
+            <span>Data Analysis</span>
+          </div>
+          <h2 class="section-title">تحليل البيانات</h2>
+        </div>
+        <div class="analysis-grid">
+          <div class="glass-card animate-on-scroll delay-1">
+            <div class="analysis-badge analysis-badge-blue">
+              <span>L0</span>
+            </div>
+            <h3 class="analysis-title">DFE LEVEL 0</h3>
+            <p class="card-text">
+              يوضح هذا المستوى النظام كعملية رئيسية واحدة، مع توضيح تفاعل
+              المستخدمين الخارجيين مثل الطالب والمعلم وولي الأمر والأدمن وتدفق
+              البيانات بينهم وبين النظام.
+            </p>
+            <div class="section-image-card">
+              <img
+                src="images/context level.jpg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+            </div>
+          </div>
+          <div class="glass-card animate-on-scroll delay-2">
+            <div class="analysis-badge analysis-badge-indigo">
+              <span>L1</span>
+            </div>
+            <h3 class="analysis-title">DFD Level 1</h3>
+            <p class="card-text">
+              يوضح هذا المستوى تقسيم النظام إلى عمليات فرعية مثل تسجيل الدخول،
+              إدارة بيانات الطلاب، تسجيل الحضور بالذكاء الاصطناعي، إدارة
+              النتائج، وقواعد البيانات المرتبطة بكل جزء.
+            </p>
+          <div class="section-image-card">
+              <img
+                src="images/level000 new.jpg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+            </div>
+          </div>
+          <div class="glass-card animate-on-scroll delay-3">
+            <div class="analysis-badge analysis-badge-purple">
+              <i data-lucide="git-branch" class="w-4 h-4 text-purple-400"></i>
+            </div>
+            <h3 class="analysis-title">ERD</h3>
+            <p class="card-text">
+              يوضح مخطط الـ ERD الكيانات الأساسية في النظام مثل الطلاب والمعلمين
+              وأولياء الأمور والإدارة، بالإضافة إلى العلاقات بين هذه الكيانات
+              داخل قاعدة البيانات.
+            </p>
+          <div class="section-image-card">
+              <img
+                src="images/erd (2).jpg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+            </div>
+          </div>
+          <div class="glass-card animate-on-scroll delay-4">
+            <div class="analysis-badge analysis-badge-green">
+              <i data-lucide="table" class="w-4 h-4 text-emerald-400"></i>
+            </div>
+            <h3 class="analysis-title">Schema</h3>
+            <p class="card-text">
+              يوضح الـ Schema الشكل الفعلي لهيكل قاعدة البيانات، بما يشمل
+              الجداول والحقول الأساسية والمفاتيح المستخدمة لربط البيانات
+              وتنظيمها داخل النظام.
+            </p>
+            <div class="section-image-card">
+              <img
+                src="images/Untitled Diagrammm (3).jpg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UI/UX ============ -->
+    <section id="uiux" class="section section-gradient-bg">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge section-badge-pink">
+            <i data-lucide="palette" class="w-4 h-4 text-pink-400"></i>
+            <span>UI / UX Design</span>
+          </div>
+          <h2 class="section-title">تصميم الواجهات</h2>
+        </div>
+        <div class="ui-row animate-on-scroll delay-1">
+          <div class="ui-text">
+            <span class="ui-badge ui-badge-indigo">Screen 01</span>
+            <h3 class="ui-title">Home Page</h3>
+            <p class="ui-desc">
+              توضح الصفحة الرئيسية واجهة ترحيبية حديثة تعرض فكرة النظام، مثل
+              الخدمات الأساسية.
+            </p>
+          </div>
+          <div class="section-image-card mockup-frame">
+              <img
+                src="images/homepage (1).png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+        </div>
+        <div class="ui-row ui-row-reverse animate-on-scroll delay-2">
+          <div class="ui-text">
+            <span class="ui-badge ui-badge-green">Screen 02</span>
+            <h3 class="ui-title">Sign Up Page</h3>
+            <p class="ui-desc">
+              توضح شاشة إنشاء الحساب إدخال بيانات المستخدم وتحديد نوعه، مع حفظ
+              البيانات داخل Firebase وربطها بصلاحيات النظام المختلفة.
+            </p>
+          </div>
+         <div class="section-image-card mockup-frame">
+              <img
+                src="images/signup.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+        </div>
+        <div class="ui-row animate-on-scroll delay-3">
+          <div class="ui-text">
+            <span class="ui-badge ui-badge-blue">Screen 03</span>
+            <h3 class="ui-title">Login Page</h3>
+            <p class="ui-desc">
+              توضح شاشة تسجيل الدخول آلية دخول المستخدمين إلى النظام بناءً على
+              الأدوار المختلفة مثل الطالب، المعلم، ولي الأمر، والأدمن.
+            </p>
+          <div class="section-image-card mockup-frame">
+              <img
+                src="images/login.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+        </div>
+        <div class="ui-row ui-row-reverse animate-on-scroll delay-4">
+          <div class="ui-text">
+            <span class="ui-badge ui-badge-amber">Screen 04</span>
+            <h3 class="ui-title">Student Dashboard</h3>
+            <p class="ui-desc">
+              توضح لوحة تحكم الطالب البيانات الأكاديمية الخاصة به، مثل المواد
+              الدراسية، الدرجات، نسبة الحضور، والإشعارات، مع تصميم سهل يساعد
+              الطالب على متابعة مستواه الدراسي.
+            </p>
+          </div>
+          <div class="section-image-card mockup-frame">
+              <img
+                src="images/stud.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+        </div>
+        <div class="ui-row animate-on-scroll delay-5">
+          <div class="ui-text">
+            <span class="ui-badge ui-badge-purple">Screen 05</span>
+            <h3 class="ui-title">Admin Dashboard & AI Attendance Control</h3>
+            <p class="ui-desc">
+              توضح لوحة تحكم الأدمن التحكم الكامل في نظام الحضور الذكي، حيث يمكن
+              بدء وإيقاف الكاميرا، متابعة حالة النظام، عرض نسبة التعرف، ومراقبة
+              عملية تسجيل الحضور داخل النظام بشكل مباشر.
+            </p>
+          </div>
+          <div class="section-image-card mockup-frame">
+              <img
+                src="images/admin.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FRONTEND (مع أماكن الصور) ============ -->
+    <section id="frontend" class="section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge section-badge-cyan">
+            <i data-lucide="monitor" class="w-4 h-4 text-cyan-400"></i>
+            <span>Frontend</span>
+          </div>
+          <h2 class="section-title">الواجهة الأمامية</h2>
+        </div>
+
+        <!-- Sign Up Flow -->
+        <div class="content-with-image animate-on-scroll delay-1 mb-12">
+          <div class="content-with-image-text">
+            <div class="feasibility-header">
+              <div class="feasibility-icon feasibility-icon-cyan">
+                <i data-lucide="user-plus" class="w-5 h-5 text-cyan-400"></i>
+              </div>
+              <h3 class="feasibility-title">Sign Up</h3>
+            </div>
+            <div class="steps-list">
+              <div class="step-item">
+                <div class="step-number step-number-cyan">1</div>
+                <p class="step-text">
+                  يتم إنشاء حساب جديد للمستخدم من خلال Firebase Authentication
+                  باستخدام البريد الإلكتروني وكلمة المرور.
+                </p>
+              </div>
+              <div class="step-item">
+                <div class="step-number step-number-cyan">2</div>
+                <p class="step-text">
+                  بعد إنشاء الحساب يتم حفظ جميع بيانات الطالب داخل Firestore مع
+                  تحديد الدور الخاص به.
+                </p>
+              </div>
+              <div class="step-item">
+                <div class="step-number step-number-cyan">3</div>
+                <p class="step-text">
+                  يتم رفع صورة الوجه وربطها ببيانات الطالب لاستخدامها لاحقًا في
+                  نظام الحضور الذكي.
+                </p>
+              </div>
+            </div>
+          </div>
+           <div class="section-image-card mockup-frame">
+              <img
+                src="images/fe1.jpeg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+              <img
+                src="images/fe2.jpeg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+              <img
+                src="images/fe3.jpeg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+          </div>
+        </div>
+
+        <!-- Login Flow -->
+        <div
+          class="content-with-image content-with-image-reverse animate-on-scroll delay-2"
+        >
+          <div class="content-with-image-text">
+            <div class="feasibility-header">
+              <div class="feasibility-icon feasibility-icon-blue">
+                <i data-lucide="log-in" class="w-5 h-5 text-blue-400"></i>
+              </div>
+              <h3 class="feasibility-title">Login</h3>
+            </div>
+            <div class="steps-list">
+              <div class="step-item">
+                <div class="step-number step-number-blue">1</div>
+                <p class="step-text">
+                  يتم التحقق من البريد الإلكتروني وكلمة المرور باستخدام Firebase
+                  Authentication لضمان دخول آمن للمستخدم.
+                </p>
+              </div>
+              <div class="step-item">
+                <div class="step-number step-number-blue">2</div>
+                <p class="step-text">
+                  بعد نجاح تسجيل الدخول يتم إنشاء Token خاص بالمستخدم وحفظه
+                  لاستخدامه في الوصول الآمن للـ APIs.
+                </p>
+              </div>
+              <div class="step-item">
+                <div class="step-number step-number-blue">3</div>
+                <p class="step-text">
+                  يتم تحديد دور المستخدم وتحويله تلقائيًا إلى لوحة التحكم الخاصة
+                  به.
+                </p>
+              </div>
+            </div>
+          </div>
+           <div class="section-image-card mockup-frame">
+              <img
+                src="images/fe4.jpeg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+              <img
+                src="images/fe5.jpeg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+              <img
+                src="images/fe6.jpeg"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DATABASE ============ -->
+    <section id="database" class="section section-gradient-bg">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge section-badge-amber">
+            <i data-lucide="hard-drive" class="w-4 h-4 text-amber-400"></i>
+            <span>Database</span>
+          </div>
+          <h2 class="section-title">قاعدة البيانات</h2>
+        </div>
+        <div class="glass-card animate-on-scroll delay-1">
+          <div class="feasibility-header">
+            <div class="feasibility-icon feasibility-icon-amber">
+              <i data-lucide="database" class="w-5 h-5 text-amber-400"></i>
+            </div>
+            <h3 class="feasibility-title">Firebase Firestore Collections</h3>
+          </div>
+          <p class="feasibility-desc">
+            يوضح هذا الشكل أهم الـ Collections المستخدمة في Firebase Firestore،
+            حيث يتم تخزين بيانات الأدمن، الطلاب، المعلمين، أولياء الأمور،
+            بالإضافة إلى سجلات الحضور الذكي المعتمدة على التعرف على الوجه.
+          </p>
+          <div class="collections-grid">
+            <div class="collection-item collection-amber">
+              <i data-lucide="shield" class="w-6 h-6 text-amber-400"></i>
+              <p>Admin</p>
+            </div>
+            <div class="collection-item collection-blue">
+              <i data-lucide="graduation-cap" class="w-6 h-6 text-blue-400"></i>
+              <p>Students</p>
+            </div>
+            <div class="collection-item collection-green">
+              <i data-lucide="book-open" class="w-6 h-6 text-emerald-400"></i>
+              <p>Teachers</p>
+            </div>
+            <div class="collection-item collection-purple">
+              <i data-lucide="users" class="w-6 h-6 text-purple-400"></i>
+              <p>Parents</p>
+            </div>
+            <div class="collection-item collection-indigo">
+              <i data-lucide="scan-face" class="w-6 h-6 text-indigo-400"></i>
+              <p>Attendance</p>
+            </div>
+          </div>
+           <div class="section-image-card">
+              <img
+                src="images/adminf.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+              <img
+                src="images/Students.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+              <img
+                src="images/Teachers.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+               <img
+                src="images/Parents.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+               <img
+                src="images/Attendance.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BACKEND (مع أماكن الصور) ============ -->
+    <section id="backend" class="section">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge section-badge-red">
+            <i data-lucide="server" class="w-4 h-4 text-red-400"></i>
+            <span>Backend</span>
+          </div>
+          <h2 class="section-title">الخادم</h2>
+        </div>
+
+        <!-- Token Verification -->
+        <div class="content-with-image animate-on-scroll delay-1 mb-12">
+          <div class="content-with-image-text">
+            <div
+              class="card-icon card-icon-red-orange"
+              style="margin-bottom: 1.5rem"
+            >
+              <i data-lucide="shield-check" class="w-5 h-5 text-red-400"></i>
+            </div>
+            <h3 class="card-title">Firebase Token Verification</h3>
+            <p class="card-text">
+              يوضح هذا الجزء آلية التحقق من الـ Firebase ID Token داخل Laravel
+              Middleware، للتأكد من هوية المستخدم قبل السماح له بالوصول إلى الـ
+              API.
+            </p>
+          </div>
+          <div class="content-with-image-img">
+            <div class="section-image-card mockup-frame">
+              <img
+                src="images/bc1.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+          </div>
+        </div>
+
+        <!-- Protected Routes -->
+        <div
+          class="content-with-image content-with-image-reverse animate-on-scroll delay-2 mb-12"
+        >
+          <div class="content-with-image-text">
+            <div
+              class="card-icon card-icon-orange-amber"
+              style="margin-bottom: 1.5rem"
+            >
+              <i data-lucide="lock" class="w-5 h-5 text-orange-400"></i>
+            </div>
+            <h3 class="card-title">Protected API Routes</h3>
+            <p class="card-text">
+              يوضح هذا الجزء حماية الـ API Routes باستخدام Middleware، بحيث لا
+              يمكن الوصول إليها إلا بعد التحقق من الـ Token بنجاح.
+            </p>
+          </div>
+          <div class="content-with-image-img">
+            <div class="section-image-card mockup-frame">
+              <img
+                src="images/bc2.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+          </div>
+        </div>
+
+        <!-- Validation -->
+        <div class="content-with-image animate-on-scroll delay-3">
+          <div class="content-with-image-text">
+            <div
+              class="card-icon card-icon-amber-yellow"
+              style="margin-bottom: 1.5rem"
+            >
+              <i data-lucide="check-square" class="w-5 h-5 text-amber-400"></i>
+            </div>
+            <h3 class="card-title">Validation</h3>
+            <p class="card-text">
+              يوضح هذا الجزء التحقق من صحة البيانات المدخلة قبل تنفيذ أي عملية،
+              وذلك لمنع إدخال قيم غير صحيحة أو غير مكتملة إلى النظام.
+            </p>
+          </div>
+         <div class="section-image-card mockup-frame">
+              <img
+                src="images/bc3.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AI SECTION (مع أماكن الصور) ============ -->
+    <section id="ai" class="section section-gradient-bg">
+      <div class="section-container">
+        <div class="section-header animate-on-scroll">
+          <div class="section-badge section-badge-purple">
+            <i data-lucide="brain" class="w-4 h-4 text-purple-400"></i>
+            <span>Artificial Intelligence</span>
+          </div>
+          <h2 class="section-title">الذكاء الاصطناعي</h2>
+          <p class="section-desc">
+            نظام التعرف على الوجه وتسجيل الحضور التلقائي
+          </p>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="content-with-image animate-on-scroll delay-1 mb-12">
+          <div class="content-with-image-text">
+            <div
+              class="ai-step-number ai-step-indigo pulse-glow"
+              style="margin-bottom: 1.5rem"
+            >
+              01
+            </div>
+            <h3 class="ai-step-title">Face Recognition Model Initialization</h3>
+            <p class="ai-step-desc">
+              يوضح هذا الجزء تهيئة نموذج التعرف على الوجه باستخدام InsightFace،
+              وتجهيزه لاكتشاف الوجوه واستخراج خصائصها.
+            </p>
+          </div>
+          <div class="content-with-image-img">
+            <div class="section-image-card">
+              <img
+                src="images/ai1.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div
+          class="content-with-image content-with-image-reverse animate-on-scroll delay-2 mb-12"
+        >
+          <div class="content-with-image-text">
+            <div
+              class="ai-step-number ai-step-purple"
+              style="margin-bottom: 1.5rem"
+            >
+              02
+            </div>
+            <h3 class="ai-step-title">تحميل بيانات الوجوه من Firebase</h3>
+            <p class="ai-step-desc">
+              يوضح هذا الجزء تحميل صور الطلاب من Firebase، ثم استخراج السمات
+              المميزة لكل وجه وتحويلها إلى Embeddings لاستخدامها في عملية
+              التعرف.
+            </p>
+          </div>
+          <div class="content-with-image-img">
+            <div class="section-image-card">
+              <img
+                src="images/ai2.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="content-with-image animate-on-scroll delay-3 mb-12">
+          <div class="content-with-image-text">
+            <div
+              class="ai-step-number ai-step-pink"
+              style="margin-bottom: 1.5rem"
+            >
+              03
+            </div>
+            <h3 class="ai-step-title">مطابقة الوجوه والتعرف على الطالب</h3>
+            <p class="ai-step-desc">
+              يوضح هذا الجزء مقارنة الوجه المكتشف من الكاميرا مع الوجوه المخزنة
+              مسبقًا، ثم تحديد هوية الطالب بناءً على أعلى نسبة تشابه.
+            </p>
+          </div>
+          <div class="content-with-image-img">
+           <div class="section-image-card">
+              <img
+                src="images/ai3.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div
+          class="content-with-image content-with-image-reverse animate-on-scroll delay-4"
+        >
+          <div class="content-with-image-text">
+            <div
+              class="ai-step-number ai-step-green pulse-glow"
+              style="margin-bottom: 1.5rem"
+            >
+              <i data-lucide="check" class="w-5 h-5 text-emerald-400"></i>
+            </div>
+            <h3 class="ai-step-title">تسجيل الحضور تلقائيًا</h3>
+            <p class="ai-step-desc">
+              يوضح هذا الجزء تسجيل حضور الطالب تلقائيًا داخل Firebase بعد نجاح
+              عملية التعرف على الوجه، مع حفظ التاريخ والوقت وحالة الحضور.
+            </p>
+            <div class="ai-success" style="margin-top: 1rem">
+              <div class="ai-success-dot"></div>
+              <span class="ai-success-text"
+                >Attendance Recorded Successfully</span
+              >
+            </div>
+          </div>
+          <div class="content-with-image-img">
+          <div class="section-image-card">
+              <img
+                src="images/ai4.png"
+                alt="DFD Level 0"
+                class="section-image"
+              />
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo-icon">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-white"></i>
+          </div>
+          <span class="logo-text">Shorouq Smart School System</span>
+        </div>
+        <p class="footer-desc">
+          Smart School Management System Using AI — Graduation Project
+        </p>
+        <p class="footer-copy">Shorouq Modern School © 2025</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
